@@ -1,0 +1,403 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Dosing Guidelines</title>
+    <style>
+        /* Reset some default styles */
+        body {
+            font-family: Arial, sans-serif;
+            margin: 20px;
+            background-color: #f5f5f5;
+        }
+
+        table {
+            width: 100%;
+            border-collapse: collapse;
+            background-color: #ffffff;
+            box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
+        }
+
+        th, td {
+            padding: 12px 15px;
+            text-align: left;
+            border-bottom: 1px solid #dddddd;
+            font-size: 14px;
+        }
+
+        th {
+            background-color: #4CAF50;
+            color: white;
+            position: sticky;
+            top: 0;
+            z-index: 2;
+        }
+
+        thead tr:first-child th {
+            background-color: #3e8e41;
+            text-transform: uppercase;
+            font-size: 16px;
+            border-bottom: 2px solid #ffffff;
+        }
+
+        thead tr:last-child th {
+            background-color: #4CAF50;
+        }
+
+        tbody tr:nth-child(even) {
+            background-color: #f9f9f9;
+        }
+
+        tbody tr:hover {
+            background-color: #f1f1f1;
+        }
+
+        /* Responsive Design */
+        @media screen and (max-width: 1200px) {
+            table {
+                font-size: 13px;
+            }
+        }
+
+        @media screen and (max-width: 768px) {
+            table, thead, tbody, th, td, tr {
+                display: block;
+            }
+
+            thead tr {
+                position: absolute;
+                top: -9999px;
+                left: -9999px;
+            }
+
+            tr {
+                margin-bottom: 15px;
+            }
+
+            td {
+                border: none;
+                position: relative;
+                padding-left: 50%;
+            }
+
+            td::before {
+                content: attr(data-label);
+                position: absolute;
+                left: 15px;
+                width: 45%;
+                padding-right: 10px;
+                white-space: nowrap;
+                font-weight: bold;
+            }
+        }
+    </style>
+</head>
+<body>
+
+    <h2>Dosing Guidelines</h2>
+
+    <div style="overflow-x:auto;">
+        <table>
+            <thead>
+                <tr>
+                    <th colspan="4">Age Range</th>
+                    <th colspan="4">Postmenstrual Age Range</th>
+                    <th>Route(s)</th>
+                    <th colspan="4">Weight Range</th>
+                    <th colspan="4">Dose Range</th>
+                    <th colspan="2">Max Dose</th>
+                </tr>
+                <tr>
+                    <th>Age Op</th>
+                    <th>Age 1</th>
+                    <th>Age 2</th>
+                    <th>Age Unit</th>
+                    <th>PMA Op</th>
+                    <th>PMA 1</th>
+                    <th>PMA 2</th>
+                    <th>PMA Unit</th>
+                    <th>Route(s)</th>
+                    <th>Wt Op</th>
+                    <th>Wt 1</th>
+                    <th>Wt 2</th>
+                    <th>Wt Unit</th>
+                    <th>Type</th>
+                    <th>From</th>
+                    <th>To</th>
+                    <th>Dose Unit</th>
+                    <th>Max Dose</th>
+                    <th>Dose Unit</th>
+                </tr>
+            </thead>
+            <tbody>
+                <!-- Row 1 -->
+                <tr>
+                    <td>≥</td>
+                    <td>0.1</td>
+                    <td></td>
+                    <td>hour</td>
+                    <td>&lt;</td>
+                    <td>36</td>
+                    <td></td>
+                    <td>week</td>
+                    <td>IntraMUSCULAR</td>
+                    <td>&lt;</td>
+                    <td>2.5</td>
+                    <td></td>
+                    <td>kg</td>
+                    <td>Single PMA</td>
+                    <td>0.4</td>
+                    <td>0.4</td>
+                    <td>mg/kg</td>
+                    <td>1</td>
+                    <td>mg</td>
+                </tr>
+                <!-- Row 2 -->
+                <tr>
+                    <td></td>
+                    <td></td>
+                    <td></td>
+                    <td></td>
+                    <td></td>
+                    <td></td>
+                    <td></td>
+                    <td></td>
+                    <td></td>
+                    <td></td>
+                    <td></td>
+                    <td></td>
+                    <td></td>
+                    <td>Daily PMA</td>
+                    <td>0.4</td>
+                    <td>0.4</td>
+                    <td>mg/kg</td>
+                    <td>1</td>
+                    <td>mg</td>
+                </tr>
+                <!-- Row 3 -->
+                <tr>
+                    <td>≥</td>
+                    <td>0.1</td>
+                    <td></td>
+                    <td>hour</td>
+                    <td>&lt;</td>
+                    <td>36</td>
+                    <td></td>
+                    <td>week</td>
+                    <td>IntraMUSCULAR</td>
+                    <td>≥</td>
+                    <td>2.5</td>
+                    <td></td>
+                    <td>kg</td>
+                    <td>Single PMA</td>
+                    <td>1</td>
+                    <td>1</td>
+                    <td>mg</td>
+                    <td></td>
+                    <td></td>
+                </tr>
+                <!-- Row 4 -->
+                <tr>
+                    <td></td>
+                    <td></td>
+                    <td></td>
+                    <td></td>
+                    <td></td>
+                    <td></td>
+                    <td></td>
+                    <td></td>
+                    <td></td>
+                    <td></td>
+                    <td></td>
+                    <td></td>
+                    <td></td>
+                    <td>Daily PMA</td>
+                    <td>1</td>
+                    <td>1</td>
+                    <td>mg</td>
+                    <td></td>
+                    <td></td>
+                </tr>
+                <!-- Row 5 -->
+                <tr>
+                    <td>≥</td>
+                    <td>0.1</td>
+                    <td></td>
+                    <td>hour</td>
+                    <td>Between</td>
+                    <td>36</td>
+                    <td>92</td>
+                    <td>week</td>
+                    <td>IntraMUSCULAR</td>
+                    <td></td>
+                    <td></td>
+                    <td></td>
+                    <td></td>
+                    <td>Single PMA</td>
+                    <td>1</td>
+                    <td>1</td>
+                    <td>mg</td>
+                    <td></td>
+                    <td></td>
+                </tr>
+                <!-- Row 6 -->
+                <tr>
+                    <td></td>
+                    <td></td>
+                    <td></td>
+                    <td></td>
+                    <td></td>
+                    <td></td>
+                    <td></td>
+                    <td></td>
+                    <td></td>
+                    <td></td>
+                    <td></td>
+                    <td></td>
+                    <td></td>
+                    <td>Daily PMA</td>
+                    <td>1</td>
+                    <td>1</td>
+                    <td>mg</td>
+                    <td></td>
+                    <td></td>
+                </tr>
+                <!-- Row 7 -->
+                <tr>
+                    <td>≥</td>
+                    <td>0.1</td>
+                    <td></td>
+                    <td>hour</td>
+                    <td>&lt;</td>
+                    <td>36</td>
+                    <td></td>
+                    <td>week</td>
+                    <td>IntraVENOUS</td>
+                    <td>&lt;</td>
+                    <td>2.5</td>
+                    <td></td>
+                    <td>kg</td>
+                    <td>Single PMA</td>
+                    <td>0.4</td>
+                    <td>0.4</td>
+                    <td>mg/kg</td>
+                    <td>1</td>
+                    <td>mg</td>
+                </tr>
+                <!-- Row 8 -->
+                <tr>
+                    <td></td>
+                    <td></td>
+                    <td></td>
+                    <td></td>
+                    <td></td>
+                    <td></td>
+                    <td></td>
+                    <td></td>
+                    <td></td>
+                    <td></td>
+                    <td></td>
+                    <td></td>
+                    <td></td>
+                    <td>Daily PMA</td>
+                    <td>0.4</td>
+                    <td>0.4</td>
+                    <td>mg/kg</td>
+                    <td>1</td>
+                    <td>mg</td>
+                </tr>
+                <!-- Row 9 -->
+                <tr>
+                    <td>≥</td>
+                    <td>0.1</td>
+                    <td></td>
+                    <td>hour</td>
+                    <td>&lt;</td>
+                    <td>36</td>
+                    <td></td>
+                    <td>week</td>
+                    <td>IntraVENOUS</td>
+                    <td>≥</td>
+                    <td>2.5</td>
+                    <td></td>
+                    <td>kg</td>
+                    <td>Single PMA</td>
+                    <td>1</td>
+                    <td>1</td>
+                    <td>mg</td>
+                    <td></td>
+                    <td></td>
+                </tr>
+                <!-- Row 10 -->
+                <tr>
+                    <td></td>
+                    <td></td>
+                    <td></td>
+                    <td></td>
+                    <td></td>
+                    <td></td>
+                    <td></td>
+                    <td></td>
+                    <td></td>
+                    <td></td>
+                    <td></td>
+                    <td></td>
+                    <td></td>
+                    <td>Daily PMA</td>
+                    <td>1</td>
+                    <td>1</td>
+                    <td>mg</td>
+                    <td></td>
+                    <td></td>
+                </tr>
+                <!-- Row 11 -->
+                <tr>
+                    <td>≥</td>
+                    <td>0.1</td>
+                    <td></td>
+                    <td>hour</td>
+                    <td>Between</td>
+                    <td>36</td>
+                    <td>92</td>
+                    <td>week</td>
+                    <td>IntraVENOUS</td>
+                    <td></td>
+                    <td></td>
+                    <td></td>
+                    <td></td>
+                    <td>Single PMA</td>
+                    <td>1</td>
+                    <td>1</td>
+                    <td>mg</td>
+                    <td></td>
+                    <td></td>
+                </tr>
+                <!-- Row 12 -->
+                <tr>
+                    <td></td>
+                    <td></td>
+                    <td></td>
+                    <td></td>
+                    <td></td>
+                    <td></td>
+                    <td></td>
+                    <td></td>
+                    <td></td>
+                    <td></td>
+                    <td></td>
+                    <td></td>
+                    <td></td>
+                    <td>Daily PMA</td>
+                    <td>1</td>
+                    <td>3</td>
+                    <td>mg</td>
+                    <td></td>
+                    <td></td>
+                </tr>
+            </tbody>
+        </table>
+    </div>
+
+</body>
+</html>
