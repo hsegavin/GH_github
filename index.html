@@ -2,128 +2,51 @@
 <html lang="en">
 <head>
     <meta charset="UTF-8">
-    <title>Welcome to IMSN Shared Resources Guide</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Shakespeare's Linguistic Legacy and GitHub Guide</title>
     <style>
-        body {
-            font-family: Arial, sans-serif;
-            background-color: #ffffff;
-            color: #000000;
-            margin: 0;
-            padding: 20px;
-        }
-        h1, h2 {
-            color: #007BFF;
-        }
-        .section {
-            border: 1px solid #cccccc;
-            padding: 15px;
-            margin-bottom: 20px;
-        }
-        .tip, .note {
-            background-color: #e9f5ff;
-            border-left: 4px solid #007BFF;
-            padding: 10px;
-            margin-top: 10px;
-        }
-        code {
-            background-color: #f8f8f8;
-            padding: 2px 4px;
-            font-size: 90%;
-            color: #c7254e;
-        }
-        ul {
-            list-style-type: disc;
-            margin-left: 20px;
-        }
-        a {
-            color: #007BFF;
-            text-decoration: none;
-        }
+        body { font-family: sans-serif; line-height: 1.6; padding: 20px; max-width: 800px; margin: auto; }
+        h1, h2 { color: #333; }
+        .essay { margin-bottom: 30px; }
+        .nav-link { display: inline-block; margin-top: 20px; padding: 10px 15px; background-color: #007bff; color: white; text-decoration: none; border-radius: 5px; }
+        .nav-link:hover { background-color: #0056b3; }
+        ul { list-style-type: disc; margin-left: 20px; }
     </style>
 </head>
 <body>
+    <header>
+        <h1>Shakespeare's Gift to English and a Guide to GitHub</h1>
+    </header>
 
-    <h1>Welcome to IMSN Shared Resources Guide</h1>
-    <p>This guide will help new users navigate GitHub for accessing and sharing files across unconnected hospitals within the Irish Medications Safety Network (IMSN).</p>
+    <section class="essay">
+        <h2>The Bard's Words: How Shakespeare Enriched the English Language</h2>
+        <p>William Shakespeare, the Bard of Avon, is renowned not only for his timeless plays and sonnets but also for his profound impact on the English language. It's estimated that Shakespeare introduced or popularized over <strong>1,700 words</strong> that are still in common use today. His linguistic creativity knew no bounds; he masterfully coined new words by converting nouns to verbs, verbs to adjectives, connecting words never before used together, adding prefixes and suffixes, and simply inventing entirely new terms.</p>
 
-    <div class="section">
-        <h2>Section 1: Structure of the Repository</h2>
-        <p>The main repository is named <strong>IMSN_Shared_Resources</strong> and is organized as follows:</p>
+        <p>This incredible lexical expansion wasn't just a matter of quantity. Shakespeare's new words often filled gaps in the language, allowing for more nuanced and precise expression. Think of words like:</p>
         <ul>
-            <li><strong>Project Type</strong>
-                <ul>
-                    <li>Categories like protocols, guidelines, or data collection tools.</li>
-                </ul>
-            </li>
-            <li><strong>Contributor</strong>
-                <ul>
-                    <li>Folders named after contributors sharing resources.</li>
-                </ul>
-            </li>
-            <li><strong>Version Folders</strong>
-                <ul>
-                    <li>Each version of the file is stored in its own folder, labeled with version numbers.</li>
-                </ul>
-            </li>
+            <li><strong>Alligator</strong> (from <em>Romeo and Juliet</em>)</li>
+            <li><strong>Bedroom</strong> (from <em>A Midsummer Night's Dream</em>)</li>
+            <li><strong>Critic</strong> (from <em>Love's Labour's Lost</em>)</li>
+            <li><strong>Eyeball</strong> (from <em>Henry VI Part 1</em>)</li>
+            <li><strong>Fashionable</strong> (from <em>Troilus and Cressida</em>)</li>
+            <li><strong>Gossip</strong> (as a verb, from <em>The Comedy of Errors</em>)</li>
+            <li><strong>Hurry</strong> (from <em>The Comedy of Errors</em>)</li>
+            <li><strong>Lonely</strong> (from <em>Coriolanus</em>)</li>
+            <li><strong>Manager</strong> (from <em>Love's Labour's Lost</em>)</li>
+            <li><strong>Rant</strong> (from <em>Hamlet</em>)</li>
+            <li><strong>Skim milk</strong> (from <em>Henry IV Part 1</em>)</li>
+            <li><strong>Worthless</strong> (from <em>The Two Gentlemen of Verona</em>)</li>
+            <li><strong>Zany</strong> (from <em>Love's Labour's Lost</em>)</li>
         </ul>
-    </div>
+        <p>These are just a few examples of the everyday words we owe to Shakespeare. He didn't just write stories; he sculpted the very language we use to tell them. His ability to capture the human condition was matched by his ability to craft the words needed to express it. So, the next time you use a word like "fashionable" or "eyeball," you're echoing the linguistic genius of William Shakespeare.</p>
+        <p>His plays and poems are a testament to the dynamic and ever-evolving nature of language, and his contributions continue to enrich our vocabulary centuries later.</p>
+    </section>
 
-    <div class="section">
-        <h2>Section 2: Naming Conventions</h2>
-        <p>To keep files organized and easily identifiable, please use the following file-naming format:</p>
-        <p><code>[ProjectType]_[Contributor]_[YYYYMMDD]_[FileDescription]_v[VersionNumber].ext</code></p>
-        <p>Example:</p>
-        <p><code>DRC_ICU_Colleague3_20241113_DataCollection_v1.0.csv</code></p>
-        <ul>
-            <li><strong>ProjectType:</strong> Short code for the project (e.g., DRC_ICU for Drug Range Checking in ICU).</li>
-            <li><strong>Contributor:</strong> Your name or identifier (e.g., Colleague3).</li>
-            <li><strong>YYYYMMDD:</strong> Date in YYYYMMDD format (e.g., 20241113 for November 13, 2024).</li>
-            <li><strong>FileDescription:</strong> Brief description of the file.</li>
-            <li><strong>v[VersionNumber]:</strong> Version number starting with v1.0.</li>
-            <li><strong>.ext:</strong> Appropriate file extension (e.g., .csv, .docx).</li>
-        </ul>
-        <div class="tip">
-            <strong>Tip:</strong> Consistent and descriptive naming helps everyone quickly identify and locate files, enhancing collaboration and reducing errors.
-        </div>
-    </div>
-
-    <div class="section">
-        <h2>Section 3: How to Use GitHub</h2>
-        <p>To access the repository:</p>
-        <ul>
-            <li>Navigate to the <strong>IMSN_Shared_Resources</strong> repository on GitHub.</li>
-            <li>Browse through the folders categorized by project type and contributor.</li>
-            <li>Click on a file to view it, and click the "Download" button to save it to your computer.</li>
-        </ul>
-        <div class="note">
-            <strong>Note:</strong> Access to certain files may be restricted. Please ensure you have the necessary permissions.
-        </div>
-    </div>
-
-    <div class="section">
-        <h2>Section 4: Version Control</h2>
-        <p>GitHub tracks file versions to show updates over time. Look for a version label (e.g., <code>v1.0</code>, <code>v1.1</code>) to identify the latest file version.</p>
-        <p>When updating a file, increment the version number accordingly and update the <code>VersionNumber</code> in the filename.</p>
-    </div>
-
-    <div class="section">
-        <h2>Section 5: Where to Find the resource</h2>
-        <p>The actual repository itself can be located at <a href="https://github.com/IrishMedSafetyNetwork/IMSN_Shared_Resources">IMSN Shared Resources</a>
-    </div>
-
-
-    <div class="section">
-        <h2>Section 6: Where to Find Help</h2>
-        <p>If you have any questions or need assistance, please contact Gavin at <a href="mailto:gavin.horan1@hse.ie">gavin.horan1@hse.ie</a> or Brian at <a href="mailto:bcleary@rotunda.ie">bcleary@rotunda.ie</a>.</p>
-    </div>
+    <section>
+        <h2>Explore GitHub</h2>
+        <p>Ready to learn about version control and collaboration with GitHub? Start with the basics of committing your work.</p>
+        <a href="github_guide/committing.html" class="nav-link">Learn About Committing in GitHub</a>
+    </section>
 
 </body>
-<p>
-<a href="https://github.com/hsegavin/GH_github/edit/main/index.html
-"><i>link to edit this</i></a>
-</p>
-<p>
-<a href="DRC_sample"><i>It's hardly this easy?</i></a>
-</p>
-
 </html>

@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Understanding Commits in GitHub</title>
+    <style>
+        body { font-family: sans-serif; line-height: 1.6; padding: 20px; max-width: 800px; margin: auto; }
+        h1, h2, h3 { color: #333; }
+        p { margin-bottom: 1em; }
+        .container { padding: 15px; border: 1px solid #ddd; border-radius: 5px; background-color: #f9f9f9; }
+        .nav-link { display: inline-block; margin-top: 20px; padding: 10px 15px; background-color: #007bff; color: white; text-decoration: none; border-radius: 5px; }
+        .nav-link:hover { background-color: #0056b3; }
+        .nav-link-back { display: inline-block; margin-top: 20px; padding: 10px 15px; background-color: #6c757d; color: white; text-decoration: none; border-radius: 5px; }
+        .nav-link-back:hover { background-color: #545b62; }
+        code { background-color: #eee; padding: 2px 4px; border-radius: 3px; }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <h1>Understanding Commits in Git and GitHub</h1>
+
+        <p>When you're working on a project, especially one that involves code or any set of files that change over time, it's crucial to keep track of those changes. In the world of Git (the version control system) and GitHub (a platform for hosting Git repositories), a <strong>commit</strong> is a fundamental concept.</p>
+
+        <h2>What is a Commit?</h2>
+        <p>Think of a commit as a <strong>snapshot</strong> of your project at a specific point in time. When you make a commit, you're telling Git: "Okay, I've made some meaningful changes, and I want to save the state of my files as they are right now."</p>
+        <p>Each commit:</p>
+        <ul>
+            <li><strong>Stores the changes</strong> you've made to your files (additions, deletions, modifications).</li>
+            <li><strong>Includes a commit message:</strong> This is a short description you write to explain what changes were made and why. Good commit messages are vital for understanding the project's history.</li>
+            <li><strong>Has a unique identifier (a "hash"):</strong> This allows Git to distinguish between different commits.</li>
+            <li><strong>Knows its parent commit(s):</strong> This creates a timeline or history of changes. Most commits have one parent, representing the state before the current changes. Merge commits can have multiple parents.</li>
+        </ul>
+
+        <h2>Why are Commits Important?</h2>
+        <p>Commits are the backbone of version control. They offer several key benefits:</p>
+        <ul>
+            <li><strong>History Tracking:</strong> You can look back at the entire history of your project, see who changed what, when, and why. This is invaluable for debugging, understanding development decisions, and onboarding new team members.</li>
+            <li><strong>Reverting Changes:</strong> If you introduce a bug or make a mistake, you can easily revert your project (or specific files) back to a previous, stable commit.</li>
+            <li><strong>Branching and Merging:</strong> Commits are essential for branching (creating separate lines of development) and merging (combining changes from different branches). This allows multiple people to work on different features simultaneously without interfering with each other.</li>
+            <li><strong>Collaboration:</strong> When working with others on GitHub, commits allow everyone to see the progress, review changes, and integrate contributions smoothly.</li>
+            <li><strong>Backup:</strong> By committing regularly and pushing your commits to a remote repository (like GitHub), you have a backup of your project's history.</li>
+        </ul>
+
+        <h2>The Commit Lifecycle (Simplified)</h2>
+        <p>In Git, files typically go through a few stages before being committed:</p>
+        <ol>
+            <li><strong>Working Directory:</strong> This is your local project folder where you make your changes (edit, add, delete files).</li>
+            <li><strong>Staging Area (Index):</strong> Before you commit, you "stage" the changes you want to include in the next commit. This allows you to select specific modifications for a commit, rather than committing everything you've changed. The command for this is typically <code>git add &lt;file&gt;</code> or <code>git add .</code> to stage all changes.</li>
+            <li><strong>Repository (.git directory):</strong> When you run <code>git commit</code>, Git takes the changes from the staging area, creates a new commit object with your message and metadata, and stores it permanently in your local repository's history (inside the hidden <code>.git</code> folder).</li>
+        </ol>
+        <p>To share your local commits with others or back them up on GitHub, you then "push" them to the remote repository using <code>git push</code>.</p>
+
+        <p>Understanding commits is the first step to mastering Git and GitHub for effective project management and collaboration.</p>
+
+        <a href="how_to_commit.html" class="nav-link">Learn How to Make a Commit</a>
+        <br>
+        <a href="../index.html" class="nav-link-back">Back to Home</a>
+    </div>
+</body>
+</html>
