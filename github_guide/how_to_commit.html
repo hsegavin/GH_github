@@ -1,0 +1,99 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>How to Make a Commit in GitHub</title>
+    <style>
+        body { font-family: sans-serif; line-height: 1.6; padding: 20px; max-width: 800px; margin: auto; }
+        h1, h2, h3 { color: #333; }
+        p { margin-bottom: 1em; }
+        .container { padding: 15px; border: 1px solid #ddd; border-radius: 5px; background-color: #f9f9f9; }
+        .nav-link-back { display: inline-block; margin-top: 20px; padding: 10px 15px; background-color: #6c757d; color: white; text-decoration: none; border-radius: 5px; }
+        .nav-link-back:hover { background-color: #545b62; }
+        code { background-color: #eee; padding: 2px 4px; border-radius: 3px; font-family: monospace; }
+        pre { background-color: #eee; padding: 10px; border-radius: 5px; overflow-x: auto; }
+        .command { color: #006400; } /* DarkGreen for commands */
+        .comment { color: #888; } /* Grey for comments */
+    </style>
+</head>
+<body>
+    <div class="container">
+        <h1>How to Make a Commit</h1>
+
+        <p>Making a commit involves a few steps: making changes to your files, adding those changes to the staging area, and then committing them with a descriptive message. Below are common ways to do this using the command line (Git Bash, Terminal, etc.) and briefly, via GitHub Desktop and other GUIs.</p>
+
+        <h2>Committing via the Command Line (Most Common)</h2>
+        <p>This is the most direct way to interact with Git and provides the most control.</p>
+
+        <ol>
+            <li>
+                <h3>1. Make Changes</h3>
+                <p>First, modify your project files. This could be editing code, writing text, adding images, or anything else related to your project.</p>
+            </li>
+
+            <li>
+                <h3>2. Check the Status</h3>
+                <p>Before staging, it's good practice to see what Git has noticed about your changes. Use the command:</p>
+                <pre><code class="command">git status</code></pre>
+                <p>This will show you which files are modified, which are new (untracked), and which are staged.</p>
+            </li>
+
+            <li>
+                <h3>3. Stage Your Changes</h3>
+                <p>Next, you need to "stage" the changes you want to include in your commit. This tells Git which specific modifications will be part of the next snapshot.</p>
+                <ul>
+                    <li><strong>To stage a specific file:</strong>
+                        <pre><code class="command">git add filename.ext</code></pre>
+                        <p><code class="comment">(Replace <code>filename.ext</code> with the actual name of your file)</code></p>
+                    </li>
+                    <li><strong>To stage all changes in the current directory and its subdirectories:</strong>
+                        <pre><code class="command">git add .</code></pre>
+                        <p><code class="comment">(The dot <code>.</code> represents the current directory)</code></p>
+                    </li>
+                    <li><strong>To stage all changes in the entire repository, no matter where you are:</strong>
+                        <pre><code class="command">git add -A</code></pre>
+                        <p><code class="comment">(Or <code>git add --all</code>)</code></p>
+                    </li>
+                </ul>
+                <p>After running <code>git add</code>, you can run <code>git status</code> again to see that your files have moved to the "Changes to be committed" section.</p>
+            </li>
+
+            <li>
+                <h3>4. Commit the Staged Changes</h3>
+                <p>Once your desired changes are staged, you commit them. This is where you provide a message explaining what you did.</p>
+                <pre><code class="command">git commit -m "Your descriptive commit message here"</code></pre>
+                <p><strong>Tips for good commit messages:</strong></p>
+                <ul>
+                    <li>Keep the subject line (the part in quotes) concise (around 50 characters if possible).</li>
+                    <li>Use the imperative mood (e.g., "Add feature X," "Fix bug Y," not "Added feature X" or "Fixing bug Y").</li>
+                    <li>If you need more detail, you can omit the <code>-m "message"</code> part. This will open your configured text editor where you can write a longer message (a subject line, a blank line, then the body).</li>
+                </ul>
+                <p>Example:</p>
+                <pre><code class="command">git commit -m "Add user login functionality"</code></pre>
+            </li>
+
+            <li>
+                <h3>5. Push Your Commits (Optional, for sharing/backup)</h3>
+                <p>If you're working with a remote repository (like one on GitHub), your commits are still only on your local machine. To share them, you need to "push" them:</p>
+                <pre><code class="command">git push</code></pre>
+                <p><code class="comment">(If it's the first time pushing a new branch, you might need something like <code>git push -u origin main</code> or <code>git push -u origin your-branch-name</code>)</code></p>
+            </li>
+        </ol>
+
+        <h2>Committing via GitHub Desktop or other GUIs</h2>
+        <p>Graphical User Interfaces (GUIs) like GitHub Desktop, Sourcetree, GitKraken, or VS Code's built-in Git tools provide a visual way to commit:</p>
+        <ol>
+            <li><strong>View Changes:</strong> The GUI will typically show you a list of modified files.</li>
+            <li><strong>Stage Changes:</strong> You can usually select files (or parts of files) to stage by checking boxes or clicking buttons.</li>
+            <li><strong>Write Message & Commit:</strong> There will be a text box for your commit message and a "Commit" button.</li>
+            <li><strong>Push:</strong> A "Push" or "Sync" button will send your commits to the remote repository on GitHub.</li>
+        </ol>
+        <p>While GUIs can be more intuitive initially, understanding the command-line workflow is beneficial for deeper Git comprehension and troubleshooting.</p>
+
+        <a href="committing.html" class="nav-link-back">Back to "What is a Commit?"</a>
+        <br>
+        <a href="../index.html" class="nav-link-back">Back to Home</a>
+    </div>
+</body>
+</html>
